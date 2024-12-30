@@ -2,7 +2,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Toaster } from "sonner";
 import MainLayout from "../layouts/MainLayout";
 import HomePage from "../pages/HomePage";
-import LoginPage from "../pages/LoginPage";
 import DashboardPage from "../pages/DashboardPage";
 
 const router = createBrowserRouter([
@@ -16,14 +15,6 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <HomePage />,
-        },
-        {
-            path: "/login",
-            element: <LoginPage />,
-        },
-        {
-            path: "/dashboard",
-            element: <DashboardPage />,
         },
         ],
     },
